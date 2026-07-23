@@ -87,8 +87,8 @@ They are a trans choral collective of trans and gender-expansive musicians in Lo
 
 - [x] Initial brief received
 - [x] Research and documentation
-- [ ] Are.na board review (need authenticated access)
-- [ ] Receive EPK and assets
+- [x] Are.na board review (2026-07-22, full breakdown in DESIGN.md)
+- [x] Receive EPK and assets (in `assets/epk/`, 2026-07-22)
 - [ ] Squarespace account setup
 - [ ] MVP build
 - [ ] Client review

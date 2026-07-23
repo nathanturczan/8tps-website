@@ -4,10 +4,10 @@
 
 | Page | Copy Status | Media Status |
 |------|-------------|--------------|
-| Landing | Heading provided | Needs photos, featured production materials |
-| Services | Needs copy | Needs photos |
-| Media | N/A | Needs curated photos + videos |
-| About | Needs copy | Needs photos |
+| Landing | Heading provided | Photos in `assets/epk/`; needs featured production materials |
+| Services | Needs copy (repertoire details in longest bio) | Photos in `assets/epk/` |
+| Media | N/A | 12 photos in `assets/epk/`; videos at youtube.com/@8TPS |
+| About | **Official bios received** (see About section below) | Photos in `assets/epk/` |
 | Contact | Form only | N/A |
 
 ---
@@ -100,13 +100,22 @@ Video requirements:
 
 ### Section 1: About
 
-Content needed:
-- [ ] Overview paragraph (who is 8TPS)
-- [ ] Mission statement
-- [ ] What makes 8TPS unique
+Official bios received (source: `assets/epk/8TPS Bios & Artist Statements.docx`). Use these verbatim; they supersede earlier research drafts.
 
-Draft based on research:
-> 8TPS is a polystylistic, a cappella-forward octet at the intersection of professional, identity-driven, and community-building choral ensembles. A company of genre-fluid performers, adaptable arts educators, and energized community partners, 8TPS embodies the diversity of trans experience and excellence.
+**SHORT BIO** (nav previews, footer, SEO):
+> 8TPS is a radical vocal collective of trans, nonbinary, and gender-expansive musicians. Known for their playful interpretations, powerful reflections, and polystylistic surprises, this company of genre-fluid performers & educators centers community, artistry, joy, and trans excellence.
+
+**MEDIUM BIO** (About page intro — version 2, venue-forward):
+> [Short bio text] ... Working across contemporary a cappella, experimental music, and a variety of folk spaces, 8TPS collaborates with trans and queer artists of all kinds through multiple musical modalities. Past partners include Mariachi Arco•Iris, Tonality, Celebration Theater, The Colony Theatre, Grand Performances, WeHo Pride, and more.
+
+**LONGEST BIO** (source for "The 8TPS Story" + "Education and Outreach" sections) — key paragraphs:
+1. Radical vocal collective intro (same as short bio)
+2. Repertoire breadth: pop a cappella, contemporary classical, folk; members expert in mariachi, shapenote, opera, jazz, musical theater; connecting commercial, traditional, and experimental music making
+3. Commissioning: expanding the canon of trans-composed works — *Never Change* music video project, *Inventing/Inviting: Trans Songs of Change* concert
+4. Access: radically inclusive spaces; trans-literate, gender-liberated creative environment; centers disabled and neurodivergent voices
+5. BroadwayWorld quote + collaborators (Mariachi Arco•Iris, Tonality, Urban Voices Project, Strong Words: Voices of the City, Yozmit the DogStar) + venues (LA LGBT Center, The Colony Theatre, Muckenthaler Cultural Center, Grand Performances, WeHo City Council Chambers, Hudson Theatres, Human Resources)
+
+**LONG BIO** also available in the docx (leadership-forward: Socks Whitmore and Tanner Pfeiffer named as co-founders).
 
 ### Section 2: The 8TPS Story
 
@@ -170,12 +179,16 @@ Form fields:
 
 ## Content Requests to Client
 
-Priority items needed from 8TPS:
+Received 2026-06-23 / 2026-07-22:
+- ~~EPK~~ — in `assets/epk/` (logos, photos, style guide, bios, press)
+- ~~About copy~~ — official bios in EPK
+- ~~YouTube channel URL~~ — https://www.youtube.com/@8TPS
+- ~~High-resolution photos~~ — 12 in EPK
 
-1. **EPK** - logos, photos, style guide
-2. **Featured production materials** for p h o r i a
-3. **Services copy** - booking info, repertoire descriptions
-4. **About copy** - story, education & outreach details
-5. **Pull quotes** - press quotes, testimonials
-6. **YouTube channel URL** - for video embeds
-7. **High-resolution photos** - performances, ensemble, events
+Still needed from 8TPS:
+
+1. **Featured production materials** — p h o r i a or Queer History Mixtape (title/dates, synopsis, promo image, ticket link)
+2. **Services copy** — booking contact, rates approach ("contact for quote"?)
+3. **Additional pull quotes** — press PDFs in `assets/epk/Press and Media/` can be mined for quotes (BroadwayWorld review, ArtsBeatLA, LA Downtown News)
+4. **Preferred contact email** for the contact form
+5. **Squarespace account** — who creates it (Tanner offered 8TPS-owned account)

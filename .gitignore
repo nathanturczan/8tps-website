@@ -1,5 +1,2 @@
+assets/epk/Press and Media/*.mp4
 .DS_Store
-*.log
-node_modules/
-.env
-.playwright-mcp/
