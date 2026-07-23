@@ -53,7 +53,7 @@ Accessible, professional, joyful. The design should reflect trans excellence and
 
 ## Accessibility Requirements
 
-- WCAG 2.1 AA compliance minimum
+- Designed and tested toward WCAG 2.1 AA (not a guaranteed certification; audit the finished site before claiming conformance)
 - High contrast text/background ratios
 - Alt text for all images
 - Keyboard navigation support
@@ -132,22 +132,7 @@ EPK photos in `assets/epk/` (Performance and Education folders):
 
 ## Squarespace Considerations
 
-### Recommended Template Families
-
-Look for templates that support:
-- Minimal header options
-- Strong typography
-- Gallery/portfolio features
-- Contact forms
-- Easy content updates
-
-### Potential Templates to Evaluate
-
-- Brine family (flexible, minimal)
-- Bedford family (clean, professional)
-- Pacific family (modern, bold)
-
-*Final selection after reviewing Are.na references*
+**Template: Vandam** (chosen July 2026). The site is Squarespace 7.1 / Fluid Engine, where "template families" no longer exist — all 7.1 sites share one engine and templates are just starting layouts. Any layout can be rebuilt from any starting point, so the Vandam choice is not a constraint.
 
 ---
 

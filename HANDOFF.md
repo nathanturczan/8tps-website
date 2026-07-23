@@ -11,7 +11,7 @@ This document enables 8TPS team members to manage and update the Squarespace sit
 | Squarespace Login | squarespace.com → Log in with 8TPS account |
 | Domain | TBD (see DOMAINS.md for options) |
 | Instagram | @8tps.music |
-| YouTube | TBD |
+| YouTube | youtube.com/@8TPS |
 | Facebook | facebook.com/8TPS.music |
 
 ---
@@ -161,9 +161,9 @@ When switching from one production to another (e.g., p h o r i a → Queer Histo
 3. Check if it's a saved draft vs. published
 
 ### Need to undo changes
-1. Squarespace has version history
-2. Go to Settings → Site Availability → Site History
-3. Restore previous version if needed
+1. While editing, use the Undo arrow (or Cmd+Z) before saving
+2. If you haven't saved yet, click "Exit" and discard changes
+3. Note: Squarespace 7.1 has **no site-wide version history / restore**. Before making big changes to a page, duplicate it first (Pages panel → hover page → Settings → Duplicate Page) so you have a fallback copy
 
 ### Domain issues
 - Check DNS settings at domain registrar
