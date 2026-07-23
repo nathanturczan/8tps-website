@@ -69,5 +69,18 @@ Located in `assets/scraped/`:
 - [ ] Style guide (colors, fonts)
 - [ ] More photos (we only have 2)
 - [ ] Pull quotes beyond BroadwayWorld
-- [ ] p h o r i a production materials
+- [x] p h o r i a production materials — scraped 2026-07-22 (see below)
 - [ ] Bios for Tanner and Socks
+
+---
+
+## p h o r i a (scraped 2026-07-22)
+
+- **Title:** p h o r i a — a musical anthology
+- **Date:** Sat Aug 8, 2026, 7:30–9:00 PM
+- **Venue:** Renberg Theatre, LA LGBT Center, 1125 N McCadden Pl, Los Angeles, CA 90038
+- **Tickets:** https://www.tickettailor.com/events/8tpsmusic/2205578 (bit.ly/phoria2026)
+- **Poster:** `assets/phoria/phoria-poster.jpg` (3274×4096)
+- **Synopsis + composer list:** see `content/home.md`
+- **Sources:** Instagram announcement https://www.instagram.com/8tps.music/p/DaOqVZ6yYDj/ · composer spotlight + "lexicon" definition posts on @8tps.music · Ticket Tailor event page
+- Instagram promo campaign also has composer bios for all six composers (Azul, Gittelson, Leng, Pfeiffer, Vasquez-Lopez, Whitmore) and per-piece "lexicon" definitions — usable for a full production page if wanted

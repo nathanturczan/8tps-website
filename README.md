@@ -49,9 +49,12 @@ Details and alternatives: `DOMAINS.md`
 | `DOMAINS.md` | Domain research and recommendation |
 | `HANDOFF.md` | Client-facing guide for managing the Squarespace site post-launch |
 | `ASSET_REQUEST.md` | (Historical) asset request — superseded; assets arrived 2026-06-23 |
+| `BUILD_CHECKLIST.md` | Paste-ready co-pilot checklist for the Squarespace editor (Media, About, Home phoria update, final QA) |
+| `SCRAPED_ASSETS.md` | Social/legacy-site scrape log, including p h o r i a production details |
 | `content/` | Page-by-page content drafts (home, services, media, about) |
 | `assets/epk/` | Client EPK: logos, style guide PDF, bios docx, 12 photos, press PDFs |
 | `assets/scraped/` | Assets scraped from the legacy site |
+| `assets/phoria/` | p h o r i a promo poster (scraped from Instagram, 2026-07-22) |
 
 Note: a 79MB press video in `assets/epk/Press and Media/` exists locally but is gitignored (GitHub size limits).
 
@@ -78,12 +81,21 @@ Hard constraints: body text visible without scrolling, minimal nav, no popups, n
 4. **About** — About / The 8TPS Story / Education & Outreach / contact form
 5. Redirect from legacy site (tannerpfeiffer.com/8tps)
 
+## Featured Production: p h o r i a
+
+Scraped 2026-07-22 from Instagram/Ticket Tailor — no longer blocked on the client:
+
+- **p h o r i a — a musical anthology** · Sat Aug 8, 2026, 7:30 PM · Renberg Theatre, LA LGBT Center
+- Tickets: https://www.tickettailor.com/events/8tpsmusic/2205578
+- Poster: `assets/phoria/phoria-poster.jpg` · full copy in `content/home.md` · paste-ready editor steps in `BUILD_CHECKLIST.md`
+
 ## Still Needed From Client
 
-- Featured production materials (title/dates, synopsis, promo image, ticket link)
-- Services/booking copy specifics + preferred contact email for the form
+- Preferred contact email for the form (likely 8TPS.music@gmail.com — confirm) + hero subheading
+- Education & Outreach workshop details
 - Domain confirmation (8tps.music) — Socks
 - 8TPS Squarespace account creation for ownership transfer
+- Redirect from tannerpfeiffer.com/8tps at launch (Tanner's site)
 
 ## Links
 

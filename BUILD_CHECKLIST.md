@@ -105,13 +105,60 @@ PLACEHOLDER: workshop offerings and school/university partnership details coming
 
 ---
 
+## HOME PAGE — FEATURED PRODUCTION UPDATE
+
+*p h o r i a materials scraped 2026-07-22 (Instagram + Ticket Tailor). Replaces the placeholders on Home.*
+
+1. Pages panel → **Home** → **Edit** → featured production section
+2. Upload poster: `assets/phoria/phoria-poster.jpg` (full-res). Alt text:
+
+```
+Poster for p h o r i a: A Trans Musical Anthology, presented by 8TPS on August 8, 2026 at 7:30 PM at the Renberg Theatre, LA LGBT Center
+```
+
+3. Title:
+
+```
+p h o r i a — a musical anthology
+```
+
+4. Date/venue line:
+
+```
+Saturday, August 8, 2026 · 7:30 PM · The Renberg Theatre, LA LGBT Center
+```
+
+5. Synopsis (official copy, verbatim):
+
+```
+Join 8TPS for p h o r i a, a musical anthology of new works by trans composers. Featuring six world premieres performed by an all-trans string quartet and vocal octet, this concert offers a new lexicon of trans experience expressed through an array of musical styles. Don't miss an unforgettable selection of songs about belonging, identity, joy, and more!
+```
+
+6. Optional credit line:
+
+```
+World premieres by Anaís Azul, Aria Gittelson, Wells Leng, Tanner Pfeiffer, Yaya Vasquez-Lopez, and Socks Whitmore. Supported in part by an arts grant from the City of West Hollywood.
+```
+
+7. Change **"Tickets Coming Soon"** button → label `Get Tickets`, link:
+
+```
+https://www.tickettailor.com/events/8tpsmusic/2205578
+```
+
+Set to open in new tab.
+
+8. **Save**
+
+---
+
 ## FINAL QA CHECKLIST
 
 - [ ] All 4 pages load in preview (password `8tps2026`)
 - [ ] Nav order: Home, Services, Media, About
 - [ ] Home: hero text visible without scrolling (desktop + mobile via the phone icon in editor)
 - [ ] Carousel: manual arrows work; if auto-advance is on, confirm it's slow/disableable
-- [ ] "Tickets Coming Soon" and "Contact Us" buttons → /about
+- [ ] "Get Tickets" button → Ticket Tailor event (new tab); "Contact Us" button → /about
 - [ ] Every image has alt text (click through each)
 - [ ] Videos play on click, no autoplay
 - [ ] Contact form submits (test it once; check Form & Survey Responses in dashboard)
@@ -120,7 +167,7 @@ PLACEHOLDER: workshop offerings and school/university partnership details coming
 - [ ] Contrast spot-check on any colored-background sections
 
 **Known placeholders to flag for the client:**
-- p h o r i a synopsis / dates / ticket link on Home
+- ~~p h o r i a synopsis / dates / ticket link on Home~~ — RESOLVED 2026-07-22 (scraped from Instagram/Ticket Tailor, see section above)
 - Education & Outreach workshop details
 - Contact-form destination email
 - Hero subheading
