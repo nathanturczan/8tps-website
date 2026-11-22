@@ -35,6 +35,18 @@ Accessible, professional, joyful. The design should reflect trans excellence and
 - **Sizzle reel on header** (Barcelona GMC) — matches Phase 2 "silent sizzle reel" item
 - **Videos in rows with text overlays** (King's Singers) — pattern for Media page
 
+### Alternate style direction: Leone's cassette-hardware references (2026-11-07)
+
+Leone's ideas for a different style direction. Not from 8TPS and not approved by the client. Images are in `assets/references/leone/`, for reference only: they are third-party product photos and ads, so none of them go on the site.
+
+| File | Reference | Source |
+|------|-----------|--------|
+| `1-sony-walkman-ii-ad-1984.jpg` | Sony Walkman II ad, 1984 | https://www.pinterest.com/pin/359443614019941708/ |
+| `2-taramps-cassette-deck.jpg` | Taramps cassette deck face | https://pin.it/7fAOgLhgL |
+| `3-sony-walkman-wm6-box.jpg` | Sony Walkman WM-6 box | https://pin.it/22Vm87ZpK |
+| `4-mixtape-jcard.jpg` | Handwritten mixtape J-card | https://pin.it/ljhj5xJ1l |
+| `5-crosley-cassette-speaker.png` | Crosley CR3045BK cassette speaker (Amazon screenshot) | Shared via Messages |
+
 ---
 
 ## Hard Constraints (Must Avoid)
