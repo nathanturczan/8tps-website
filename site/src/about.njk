@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: About
+permalink: /about/
+---
+<section class="page-head stripes"><div class="wrap">
+  <span class="eyebrow">About</span>
+  <h1 class="title">About 8TPS</h1>
+  <p class="lede">{{ about.lede }}</p>
+  <nav class="subnav" aria-label="On this page">
+    <a href="#story">The 8TPS Story</a>
+    <a href="#edu">Education &amp; Outreach</a>
+    <a href="#people">Leadership</a>
+    <a href="#contact-form">Contact</a>
+  </nav>
+</div></section>
+
+<section class="band" id="story"><div class="wrap two">
+  <div class="prose">
+    <h2 class="h">The 8TPS Story</h2>
+    {{ about.story | paragraphs | safe }}
+    {% if about.story_copy_needed %}<span class="need">{{ about.story_copy_needed }}</span>{% endif %}
+  </div>
+  {% if about.story_image %}<div class="framed b-sky" style="align-self:start;aspect-ratio:4/3;max-width:100%"><img class="photo" src="{{ about.story_image }}" alt="{{ about.story_image_alt }}"></div>{% endif %}
+</div></section>
+
+<section class="band stripes" id="edu"><div class="wrap stack" style="gap:24px">
+  <div class="prose" style="background:var(--paper);border-radius:18px;padding:22px 24px">
+    <h2 class="h">Education &amp; Outreach</h2>
+    {{ about.education | paragraphs | safe }}
+    {% if about.education_copy_needed %}<span class="need">{{ about.education_copy_needed }}</span>{% endif %}
+  </div>
+  <div class="edu">
+    {%- set borders = ["", "b-sky", "b-indigo"] %}
+    {%- for ph in about.education_photos %}
+    <figure><div class="framed {{ borders[loop.index0 % 3] }}"><img class="photo" src="{{ ph.image }}" alt="{{ ph.alt }}" loading="lazy"></div>{% if ph.caption %}<figcaption>{{ ph.caption }}</figcaption>{% endif %}</figure>
+    {%- endfor %}
+  </div>
+</div></section>
+
+<section class="band" id="people"><div class="wrap stack" style="gap:22px">
+  <h2 class="h">Leadership</h2>
+  <div class="people">
+    {%- set borders = ["b-magenta", "b-sky", "b-indigo", "b-deep"] %}
+    {%- for l in about.leaders %}
+    <div class="card {{ borders[loop.index0 % 4] }}"><h3>{{ l.name }}</h3>{% if l.role %}<p class="role">{{ l.role }}</p>{% endif %}{{ l.bio | paragraphs | safe }}{% if l.copy_needed %}<span class="need">{{ l.copy_needed }}</span>{% endif %}</div>
+    {%- endfor %}
+  </div>
+</div></section>
+
+<section class="band stripes" id="contact-form"><div class="wrap stack" style="gap:22px">
+  <h2 class="h" style="background:var(--paper);justify-self:start;border-radius:14px;padding:4px 16px">Get in touch</h2>
+  <form class="card b-indigo contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p hidden><label>Leave this empty<input name="bot-field"></label></p>
+    <label>Name<input name="name" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label class="full">Pronouns <small style="font-family:var(--body);font-weight:400;color:var(--muted)">Optional, but kindly requested.</small><input name="pronouns"></label>
+    <label class="full">Subject
+      <select name="subject" required>
+        <option>General inquiry</option><option>Booking request</option><option>Press / media</option><option>Auditions</option><option>Education / outreach</option><option>Partnership opportunity</option><option>Other</option>
+      </select>
+    </label>
+    <label class="full">Message<textarea name="message" rows="5" required></textarea></label>
+    <div class="full row" style="align-items:center"><button class="btn" type="submit">Send message</button></div>
+  </form>
+</div></section>

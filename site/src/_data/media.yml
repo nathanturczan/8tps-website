@@ -1,0 +1,36 @@
+lede: Videos and images from our performances, workshops, and community outreach work.
+videos:
+  - url: https://www.youtube.com/watch?v=fThD4DtkN-Y
+    title: “et bon bon bon bon bon...”
+    subtitle: The Muckenthaler Cultural Center
+  - url: https://www.youtube.com/watch?v=npjhJ-8-_j0
+    title: “Toxic”
+    subtitle: "Strong Words: Voices of the City"
+  - url: https://www.youtube.com/watch?v=PSwNrI7ogUQ
+    title: “Wannabe” as an English Madrigal
+    subtitle: ICE QUEENS
+  - url: https://www.youtube.com/watch?v=uTTsV0SfdtE
+    title: Birdsong
+    subtitle: Celebration Honors Gala
+  - url: https://www.youtube.com/watch?v=9q9YyoOy4Ek
+    title: 8TPS at VOICES
+    subtitle: Disabled Artist Showcase
+photos:
+  - image: /img/muck.jpg
+    alt: 8TPS performing This Is How We Love at the Muckenthaler Cultural Center, 2026
+    caption: This Is How We Love · The Muck, 2026
+  - image: /img/strongwords.jpg
+    alt: "8TPS performing with Strong Words: Voices of the City"
+    caption: "Strong Words: Voices of the City"
+  - image: /img/inventing.jpg
+    alt: "8TPS in tech rehearsal for Inventing/Inviting: Trans Songs of Change"
+    caption: Inventing/Inviting tech rehearsal
+  - image: /img/feverdream.jpg
+    alt: 8TPS performing Life Cycle of a Fever Dream
+    caption: Life Cycle of a Fever Dream
+  - image: /img/voices.jpg
+    alt: 8TPS at the VOICES Disabled Artists Showcase
+    caption: VOICES Disabled Artists Showcase
+  - image: /img/gala.jpg
+    alt: 8TPS performing at the Celebration Honors Gala
+    caption: Celebration Honors Gala

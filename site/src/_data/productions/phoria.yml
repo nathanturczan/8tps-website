@@ -1,0 +1,27 @@
+title: p h o r i a
+subtitle: A Trans Musical Anthology
+status: Past
+date: 2026-08-08
+when: Saturday, August 8, 2026 · 7:30 PM
+where: The Renberg Theatre, LA LGBT Center
+poster: /img/phoria.jpg
+poster_alt: "Poster for p h o r i a: A Trans Musical Anthology, August 8, 2026"
+description: |-
+  On August 8th, join 8TPS for p h o r i a, a musical anthology of new works by trans composers. Featuring six world premieres performed by an all-trans string quartet and vocal octet, this concert offers a new lexicon of trans experience expressed through an array of musical styles. Don't miss an unforgettable selection of songs about belonging, identity, joy, and more!
+
+  This program is supported in part by an arts grant from the City of West Hollywood.
+ticket_url: ""
+program:
+  - work: plerophoria
+    composer: Wells Leng
+  - work: apistophoria
+    composer: Aria Gittelson
+  - work: anikophoria
+    composer: Tanner Pfeiffer
+  - work: linguaphoria
+    composer: Yaya Vasquez-Lopez
+  - work: anthesphoria
+    composer: Anaís Azul
+  - work: ipsophoria
+    composer: Socks Whitmore
+copy_needed: ""

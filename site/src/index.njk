@@ -1,0 +1,90 @@
+---
+layout: base.njk
+---
+<section class="hero stripes">
+  <div class="wrap">
+    <div class="hero-copy">
+      {% if settings.hero_pill %}<span class="pill">{{ settings.hero_pill }}</span>{% endif %}
+      <h1>{% for line in settings.headline %}<span>{{ line }}</span>{% endfor %}</h1>
+      <p class="intro">{{ settings.hero_intro }}</p>
+      <div class="row"><a class="btn" href="/book/">Book 8TPS</a><a class="btn ghost" href="/media/">Media</a></div>
+    </div>
+    <div class="hero-img"><img src="{{ settings.hero_image }}" alt="{{ settings.hero_image_alt }}"></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap stack" style="gap:22px">
+  {%- for p in productions | homeProductions %}
+    {%- set label = "Up next" if p.status == "Upcoming" else "Most recent production" %}
+    {%- if p.poster %}
+    <article class="card {{ 'b-sky' if p.status == 'Upcoming' else 'b-magenta' }} feature">
+      <img class="poster" src="{{ p.poster }}" alt="{{ p.poster_alt }}">
+      <div class="stack">
+        <span class="tag{% if p.status != 'Upcoming' %} past{% endif %}">{{ label }}</span>
+        <h3>{{ p.title }}</h3>
+        {% if p.subtitle %}<p class="subtitle">{{ p.subtitle }}</p>{% endif %}
+        {{ p.description | paragraphs | safe }}
+        {% if p.when or p.where %}
+        <dl class="meta">
+          {% if p.when %}<dt>When</dt><dd>{{ p.when }}</dd>{% endif %}
+          {% if p.where %}<dt>Where</dt><dd>{{ p.where }}</dd>{% endif %}
+        </dl>
+        {% endif %}
+        {% if p.program and p.program.length %}
+        <ul class="lexicon" aria-label="Program">
+          {% for w in p.program %}<li><b>{{ w.work }}</b>{{ w.composer }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        {% if p.ticket_url and p.status == "Upcoming" %}<div class="row"><a class="btn" href="{{ p.ticket_url }}" target="_blank" rel="noopener">Get tickets</a></div>{% endif %}
+        {% if p.copy_needed %}<p><span class="need">{{ p.copy_needed }}</span></p>{% endif %}
+      </div>
+    </article>
+    {%- else %}
+    <div class="card b-sky next">
+      <img class="tape" src="/img/cassette.png" alt="">
+      <div class="grow">
+        <span class="tag{% if p.status != 'Upcoming' %} past{% endif %}">{{ label }}</span>
+        <p class="subtitle" style="margin-top:6px">{{ p.title }}</p>
+        {% if p.when or p.where %}<p>{{ p.when }}{% if p.when and p.where %} · {% endif %}{{ p.where }}</p>{% endif %}
+        {{ p.description | paragraphs | safe }}
+        {% if p.copy_needed %}<p><span class="need">{{ p.copy_needed }}</span></p>{% endif %}
+      </div>
+      {% if p.ticket_url and p.status == "Upcoming" %}<a class="btn" href="{{ p.ticket_url }}" target="_blank" rel="noopener">Get tickets</a>{% endif %}
+    </div>
+    {%- endif %}
+  {%- endfor %}
+  </div>
+</section>
+
+<section class="band stripes" style="padding-block:56px">
+  <div class="wrap summaries">
+    {%- set borders = ["b-magenta", "b-sky", "b-indigo"] %}
+    {%- for s in home.summaries %}
+    <a class="card {{ borders[loop.index0 % 3] }} summary" href="{{ s.link }}">
+      <div class="img"><img src="{{ s.image }}" alt="{{ s.image_alt }}"></div>
+      <div class="txt"><h3>{{ s.title }}</h3><p>{{ s.text }}</p><span class="go">{{ s.title }} →</span></div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+{% if quotes and quotes.length %}
+<section class="quotes" aria-roledescription="carousel" aria-label="Press quotes">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#D9D2FF">In the press</span>
+    <div aria-live="polite" id="quote-slot">
+      <figure><blockquote>“{{ quotes[0].quote }}”</blockquote><figcaption>{{ quotes[0].source }}</figcaption></figure>
+    </div>
+    {% if quotes.length > 1 %}
+    <div class="qcontrols">
+      <button type="button" id="q-prev" aria-label="Previous quote">Previous</button>
+      <button type="button" id="q-next" aria-label="Next quote">Next</button>
+      <button type="button" id="q-pause">Pause</button>
+      <div class="dots" id="q-dots"></div>
+    </div>
+    {% endif %}
+  </div>
+  <script type="application/json" id="quotes-data">{{ quotes | dump | safe }}</script>
+</section>
+{% endif %}

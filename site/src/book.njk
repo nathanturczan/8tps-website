@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Book
+permalink: /book/
+---
+<section class="page-head stripes"><div class="wrap">
+  <span class="eyebrow">Book</span>
+  <h1 class="title">Book 8TPS</h1>
+  <p class="lede">{{ book.lede }}</p>
+</div></section>
+
+<section class="band"><div class="wrap stack" style="gap:28px">
+  {% if book.intro %}<div class="prose">{{ book.intro | paragraphs | safe }}</div>{% endif %}
+  <div class="rep">
+    {%- set borders = ["b-magenta", "b-sky", "b-indigo", "b-deep"] %}
+    {%- for r in book.repertoire %}
+    <div class="card {{ borders[loop.index0 % 4] }}"><h3>{{ r.title }}</h3>{{ r.description | paragraphs | safe }}{% if r.copy_needed %}<span class="need">{{ r.copy_needed }}</span>{% endif %}</div>
+    {%- endfor %}
+  </div>
+
+  <div class="two">
+    <div class="stack">
+      <h2 class="h">How to book</h2>
+      {{ book.how_to_book | paragraphs | safe }}
+      {% if book.how_to_book_copy_needed %}<span class="need">{{ book.how_to_book_copy_needed }}</span>{% endif %}
+      <div class="row"><a class="btn" href="/about/#contact-form">Start a booking inquiry</a></div>
+    </div>
+    <div class="stack">
+      <h2 class="h">Venues</h2>
+      <ul class="chips">{% for v in book.venues %}<li>{{ v }}</li>{% endfor %}</ul>
+      <h2 class="h" style="margin-top:8px">Collaborators</h2>
+      <ul class="chips">{% for c in book.collaborators %}<li>{{ c }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</div></section>

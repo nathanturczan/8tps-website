@@ -1,0 +1,16 @@
+summaries:
+  - title: Book
+    text: Interested in booking 8TPS for your next event?
+    image: /img/strongwords.jpg
+    image_alt: "8TPS singers performing at Strong Words: Voices of the City"
+    link: /book/
+  - title: Media
+    text: Videos and images from our performances, workshops, and community outreach work.
+    image: /img/muck.jpg
+    image_alt: 8TPS performing at the Muckenthaler Cultural Center
+    link: /media/
+  - title: About
+    text: 8TPS is a radical vocal collective of trans, nonbinary, and gender-expansive musicians.
+    image: /img/longbeach.jpg
+    image_alt: 8TPS leading a session at the Long Beach Family Arts Festival
+    link: /about/

@@ -1,0 +1,44 @@
+{%- set nav = [["Home", "/"], ["Book", "/book/"], ["Media", "/media/"], ["About", "/about/"], ["Contact", "/about/#contact-form"]] -%}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% if settings.hide_from_search_engines %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<title>{% if title %}{{ title }} · {% endif %}8TPS</title>
+<meta name="description" content="{{ settings.footer_text }}">
+<link rel="icon" href="/img/cassette.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inclusive+Sans:ital@0;1&family=Kanit:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="8TPS home"><img src="/img/cassette.png" alt="">8TPS</a>
+    <nav class="main" aria-label="Main">
+      {%- for item in nav %}
+      <a href="{{ item[1] }}"{% if item[1] == page.url %} aria-current="page"{% endif %}>{{ item[0] }}</a>
+      {%- endfor %}
+    </nav>
+    {% include "socials.njk" %}
+  </div>
+</header>
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="/img/logo-lower.png" alt="8TPS">
+    <p>{{ settings.footer_text }}</p>
+    {% include "socials.njk" %}
+    <p class="copy">© {{ "now" | year }} 8TPS. All rights reserved.</p>
+  </div>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>

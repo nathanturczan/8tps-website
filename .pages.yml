@@ -1,0 +1,163 @@
+# Pages CMS editor for the 8TPS site (https://app.pagescms.org)
+media:
+  input: site/src/img
+  output: /img
+
+content:
+  - name: productions
+    label: Productions
+    type: collection
+    path: site/src/_data/productions
+    format: yaml
+    filename: "{primary}.yml"
+    view:
+      fields: [title, status, date]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: subtitle, label: Subtitle, type: string }
+      - name: status
+        label: Status
+        type: select
+        description: "Upcoming productions show on the home page as 'Up next'. The most recent past production also shows."
+        options:
+          values: [Upcoming, Past]
+      - { name: date, label: Date (used for ordering), type: date }
+      - { name: when, label: "When (as shown, e.g. Saturday, August 8, 2026 · 7:30 PM)", type: string }
+      - { name: where, label: Where, type: string }
+      - { name: poster, label: Poster image, type: image }
+      - { name: poster_alt, label: Poster description (for screen readers), type: string }
+      - { name: description, label: Description, type: text, description: "Leave a blank line between paragraphs." }
+      - { name: ticket_url, label: Ticket link, type: string, description: "Shows a 'Get tickets' button while the production is Upcoming." }
+      - name: program
+        label: Program (works and composers)
+        type: object
+        list: true
+        fields:
+          - { name: work, label: Work, type: string }
+          - { name: composer, label: Composer, type: string }
+      - { name: copy_needed, label: Copy-needed note, type: string, description: "Shows a pink placeholder box. Clear it once the real copy is in." }
+
+  - name: home
+    label: Home page
+    type: file
+    path: site/src/_data/home.yml
+    format: yaml
+    fields:
+      - name: summaries
+        label: Section cards
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Image, type: image }
+          - { name: image_alt, label: Image description (for screen readers), type: string }
+          - { name: link, label: Link, type: string }
+
+  - name: quotes
+    label: Press quotes
+    type: file
+    path: site/src/_data/quotes.yml
+    format: yaml
+    list: true
+    fields:
+      - { name: quote, label: Quote (no quotation marks), type: text, required: true }
+      - { name: source, label: Source, type: string }
+
+  - name: book
+    label: Book page
+    type: file
+    path: site/src/_data/book.yml
+    format: yaml
+    fields:
+      - { name: lede, label: Intro box, type: text }
+      - { name: intro, label: Intro paragraph, type: text }
+      - name: repertoire
+        label: Repertoire cards
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: copy_needed, label: Copy-needed note, type: string }
+      - { name: how_to_book, label: How to book, type: text }
+      - { name: how_to_book_copy_needed, label: How to book copy-needed note, type: string }
+      - { name: venues, label: Venues, type: string, list: true }
+      - { name: collaborators, label: Collaborators, type: string, list: true }
+
+  - name: media
+    label: Media page
+    type: file
+    path: site/src/_data/media.yml
+    format: yaml
+    fields:
+      - { name: lede, label: Intro, type: text }
+      - name: videos
+        label: Videos (the first one shows large)
+        type: object
+        list: true
+        fields:
+          - { name: url, label: YouTube link, type: string, required: true }
+          - { name: title, label: Title, type: string }
+          - { name: subtitle, label: Subtitle, type: string }
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true }
+          - { name: alt, label: Photo description (for screen readers), type: string, required: true }
+          - { name: caption, label: Caption, type: string }
+
+  - name: about
+    label: About page
+    type: file
+    path: site/src/_data/about.yml
+    format: yaml
+    fields:
+      - { name: lede, label: Intro box, type: text }
+      - { name: story, label: The 8TPS Story, type: text, description: "Leave a blank line between paragraphs." }
+      - { name: story_copy_needed, label: Story copy-needed note, type: string }
+      - { name: story_image, label: Story image, type: image }
+      - { name: story_image_alt, label: Story image description, type: string }
+      - { name: education, label: Education & Outreach, type: text }
+      - { name: education_copy_needed, label: Education copy-needed note, type: string }
+      - name: education_photos
+        label: Education photos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image }
+          - { name: alt, label: Photo description (for screen readers), type: string }
+          - { name: caption, label: Caption, type: string }
+      - name: leaders
+        label: Leadership
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+          - { name: bio, label: Bio, type: text }
+          - { name: copy_needed, label: Copy-needed note, type: string }
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: site/src/_data/settings.yml
+    format: yaml
+    fields:
+      - { name: hide_from_search_engines, label: Hide from search engines (turn off at launch), type: boolean }
+      - { name: hero_pill, label: Home tagline pill, type: string }
+      - { name: headline, label: Home headline lines, type: string, list: true }
+      - { name: hero_intro, label: Home intro, type: text }
+      - { name: hero_image, label: Home hero image, type: image }
+      - { name: hero_image_alt, label: Home hero image description, type: string }
+      - { name: footer_text, label: Footer text (also used for search results), type: text }
+      - { name: instagram, label: Instagram link, type: string }
+      - { name: youtube, label: YouTube link, type: string }
+      - { name: facebook, label: Facebook link, type: string }
